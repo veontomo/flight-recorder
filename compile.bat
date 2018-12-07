@@ -1,0 +1,1 @@
+"c:\Program Files\Java\jdk1.8.0_92\bin\javac.exe" src\com\veontomo\Main.java
