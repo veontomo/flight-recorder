@@ -1,1 +1,1 @@
-"c:\Program Files\Java\jdk1.8.0_92\bin\javac.exe" src\com\veontomo\Main.java
+"c:\Program Files\Java\jdk1.8.0_191\bin\javac.exe" -d out -sourcepath src src/com/veontomo/Main.java
