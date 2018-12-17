@@ -1,20 +1,25 @@
-package com.veontomo;
+package com.baeldung;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
 
     public static void main(String[] args) {
-        Pool p = new Pool(10);
-        for (int i = 0; i < 1000; i++) {
-            new Thread(() -> {
-                try {
-                    Object o = p.getItem();
-                    Thread.sleep(100);
-                    p.putItem(o);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }).start();
+        List<Object> items = new ArrayList<>(1);
+        try {
+            while (true){
+                items.add(new Object());
+            }
+        } catch (OutOfMemoryError e){
+            System.out.println(e.getMessage());
+        }
+        assert items.size() > 0;
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
         }
     }
 
